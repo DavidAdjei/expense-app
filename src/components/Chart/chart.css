@@ -51,8 +51,6 @@ hr{
     gap: .5rem;
 }
 
-
-
 .chart__footer-month p,
 .chart__footer-last p{
     color: var(--medium__brown);

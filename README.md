@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/DavidAdjei/expense-app)
-- Live Site URL: [Vercel](https://expense-app-beta-lake.vercel.app/)
+- Live Site URL: [Vercel](https://expense-app-one-roan.vercel.app/)
 
 ## My process
 
