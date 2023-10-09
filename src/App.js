@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import Nav from './components/nav'
-import Chart from './components/chart'
+import Nav from './components/Header/nav'
+import Chart from './components/Chart/chart'
 import json from './data.json'
 
 export default function App() {

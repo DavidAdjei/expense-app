@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import './bar.css'
 
 export default function Bar({ day, amount, key, data }) {
   const isHighest = data.isHighestAmount;
@@ -10,7 +11,7 @@ export default function Bar({ day, amount, key, data }) {
 
   return (
     <div className='bar__column' >
-      <p className={`amount ${showAmount ? '' : 'active'}`} >{ amount}</p>
+      <p className={`amount ${showAmount ? '' : 'active'}`} >${amount}</p>
       <div
         onMouseEnter={() => setShowAmount(true)}
         onMouseLeave={() => setShowAmount(false)}

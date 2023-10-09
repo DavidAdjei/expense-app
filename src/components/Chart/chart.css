@@ -1,0 +1,76 @@
+.chart{
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: var(--vary__pale--orange);
+  border-radius: .5rem;
+  flex-direction: column;
+  gap: 2rem;
+  padding-inline: 2rem;
+  padding-bottom: 2rem;
+}
+
+.chart__header{
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+  font-size: 18px;
+  color: var(--dark__brown);
+}
+
+.chart__section{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  height: 10rem;
+}
+
+hr{
+  border: none;
+  border-top: 2px solid var(--cream);
+}
+
+.chart__footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  align-items: flex-end;
+}
+
+.chart__footer-last{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .2rem;
+}
+
+.chart__footer-month{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+
+.chart__footer-month p,
+.chart__footer-last p{
+    color: var(--medium__brown);
+}
+
+.chart__footer-last h5{
+    font-size: 1.2rem;
+}
+
+.chart__footer-month h1,
+.chart__footer-last h5{
+    color: var(--dark__brown);
+}
+
+
+
+@media screen and (max-width: 32rem) {
+    .chart__header h2{
+        font-size: 1.4rem;  
+    }
+}

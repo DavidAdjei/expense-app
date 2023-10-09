@@ -1,5 +1,6 @@
 import React from 'react'
-import Bar from './bar'
+import Bar from '../Bar/bar'
+import './chart.css'
 
 export default function Chart({ data }) {
   const maxAmountIndex = data.reduce(
@@ -28,7 +29,7 @@ export default function Chart({ data }) {
       </div>
       <hr />
       <div className='chart__footer'>
-        <div>
+        <div className='chart__footer-month'>
           <p>
             Total this month
           </p>
@@ -36,7 +37,7 @@ export default function Chart({ data }) {
             $478.33
           </h1>
         </div>
-        <div>
+        <div className='chart__footer-last'>
           <h5> +2.4%</h5>
           <p>from last month</p>
         </div>

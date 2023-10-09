@@ -1,0 +1,58 @@
+.bar__column{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  justify-content: flex-end;
+  align-items: center;
+  width: calc(100% - 6rem);
+  height: 100%;
+}
+
+.amount{
+  padding: .3rem;
+  background-color: black;
+  color: white;
+  font-size: .77rem;
+  border-radius: .2rem;
+}
+
+.bar{
+  width: 100%;
+  background-color: var(--soft__red);
+  border-radius: .2rem;
+}
+
+.bar:hover{
+  background-color: hsl(10, 74%, 79%) ;
+  cursor: pointer;
+}
+
+.highest{
+  background-color: var(--cyan);
+}
+
+.highest:hover{
+  background-color: hsl(185, 59%, 81%);
+}
+
+.day{
+  text-transform: capitalize;
+
+}
+
+.active{
+  display: none ;
+}
+
+@media screen and (max-width: 32rem) {
+  .amount{
+    padding: 0;
+    background-color: transparent;
+    color: var(--dark__brown);
+    font-size: .53rem;
+  }
+
+  .day{
+    font-size: .6rem;
+  }
+}

@@ -19,157 +19,31 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--cream);
   font-family: 'DM Sans', sans-serif;
 }
 
+#root{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .container{
   display: flex;
-  width: 29rem;
+  width: 31rem;
   height: auto;
   gap: 2rem;
   flex-direction: column;
 }
 
-.nav{
-  width: 100%;
-  height: 6rem;
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--soft__red);
-  border-radius: .5rem;
-  align-items: center;
-  padding-inline: 2rem;
+@media screen and (max-width: 32rem) {
+  .container{
+    width: 90%;
+  }
 }
-
-.balance__section{
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-}
-
-.balance{
-  font: .8rem;
-  color: var(--vary__pale--orange);
-}
-
-.balance__amount{
-  font-size: 1.6rem;
-  color: var(--vary__pale--orange);
-}
-
-.circles{
-  display: flex;
-
-}
-
-.circle__trans,
-.circle__black{
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-}
-
-.circle__black{
-  background-color: black;
-}
-
-.circle__trans{
-  border: 2px solid var(--cream);
-  position: relative;
-  left: 1rem;
-}
-
-.chart{
-  display: flex;
-  width: 100%;
-  height: auto;
-  background-color: var(--vary__pale--orange);
-  border-radius: .5rem;
-  flex-direction: column;
-  gap: 2rem;
-  padding-inline: 2rem;
-  padding-bottom: 2rem;
-}
-
-.chart__header{
-  width: 100%;
-  height: auto;
-  padding-top: 2rem;
-  font-size: 18px;
-}
-
-.chart__section{
-  display: flex;
-  gap: 1rem;
-  width: 100%;
-  height: 10rem;
-}
-
-.bar__column{
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-  justify-content: flex-end;
-  align-items: center;
-  width: calc(100% - 6rem);
-  height: 100%;
-}
-
-.amount{
-  padding: .3rem;
-  background-color: black;
-  color: white;
-  font-size: .8rem;
-  border-radius: .2rem;
-}
-
-.bar{
-  width: 100%;
-  background-color: var(--soft__red);
-  border-radius: .2rem;
-}
-
-.bar:hover{
-  background-color: hsl(10, 74%, 79%) ;
-  cursor: pointer;
-}
-
-.highest{
-  background-color: var(--cyan);
-}
-
-.highest:hover{
-  background-color: hsl(185, 59%, 81%);
-}
-
-.day{
-  text-transform: capitalize;
-
-}
-
-hr{
-  border: none;
-  border-top: 2px solid var(--cream);
-}
-
-.active{
-  display: none ;
-}
-
-.chart__footer{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-  align-items: center;
-}
-
-
-
-
-
 
 
